@@ -163,7 +163,7 @@ resource "aws_lb_listener_rule" "main" {
 
   condition {
     host_header {
-      values = [var.component == "frontend" ? "${var.env}.rdevopsb72.online" : "${var.component}-${var.env}.rdevopsb72.online"]
+      values = [var.component == "frontend" ? "${var.env}.vyshu.online" : "${var.component}-${var.env}.vyshu.online"]
     }
   }
 }
